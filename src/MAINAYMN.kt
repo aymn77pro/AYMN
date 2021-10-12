@@ -1,4 +1,4 @@
-fun aymn(){
+fun main(){
     var PlayerName="zamel"
     var playerHealth=100
     if(playerHealth==100){
