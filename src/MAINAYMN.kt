@@ -1,4 +1,12 @@
 
+fun void():String{
+    TODO()
+    var x=5
+    if (x>2){
+        println("true")}
+    else{
+        println("fales")}
+}
 fun main() {
     val name = "Madrigal"
     var healthPoints = 89
@@ -22,5 +30,4 @@ fun main() {
         in 6..10 -> println("orange")
         in 11..15-> println("purle")
         in 16..20-> println("green")
-    }
-}
+    }}
