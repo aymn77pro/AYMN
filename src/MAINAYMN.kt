@@ -1,20 +1,30 @@
-fun main(){
-    println(" put your salary")
-    var salary= readLine()!!
-    println("put you preformnce")
-    var preformnce = readLine()!!
-    if (preformnce.toInt()==1){
-       var r=salary.toInt()+(salary.toInt()*0.06)
-        println(r)}
-    else if (preformnce.toInt()==2){
-        var r=salary.toInt()+(salary.toInt()*0.04)
-        println(r)
+fun main(args: Array<String>) {
+    var num1 = readLine()!!.toFloat()
+    var num2 = readLine()!!.toFloat()
+    var num3 = readLine()!!.toFloat()
+    var smallest=num1
+    if (smallest>=num2){
+        smallest=num2
     }
-    else if (preformnce.toInt()==3){
-        var r=salary.toInt()+(salary.toInt()*0.015)
-        println(r)
+    if (smallest>=num3){
+        smallest=num3
     }
-    else{
-        println("error")
+    var biggest=num1
+    if (biggest<=num2){
+        biggest=num2
     }
+    if (biggest<=num3){
+        biggest=num3
+    }
+    var mid=num1
+    if (num1>num2 && num1<num3||num1<num2&&num1>num3){
+        mid =  num1
+    }
+    if ((num2>num1 && num2<num3||num2<num1&&num2>num3))
+    {mid=num2}
+    if(num3>num2 && num3<num1||num3<num2&&num3>num1){
+        mid=num3
+    }
+
+    println("$smallest,$mid,$biggest")
 }
